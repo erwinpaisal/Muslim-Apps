@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AFNApp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="tab_1"></string>
+    <string name="tab_2"></string>
+    <string name="tab_3"></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_search_by_title">Cari Berdasarkan Judul...</string>
+    <string name="str_dzikir_petang">Dzikir Petang</string>
+    <string name="str_dzikir_pagi">Dzikir Pagi</string>
+    <string name="str_help">
+        <html>
+            <body>
+                <b>Tema Kajian</b><p>Tema / Judul Kajian</p><br></br>
+                <b>Detail Tema</b><p>Deskripsi singkat Tema</p><br></br>
+                <b>Pemateri</b><p>Nama Pemateri</p><br></br>
+                <b>Detail Pemateri</b><p>Biografi singkat Pemateri</p><br></br>
+                <b>Link Google Maps</b><p>Opsional, link Lokasi dari Google Maps</p><br></br>
+                <b>Kajian Untu</b><p>Untuk Umum, Ikhwan atau Akhwat</p><br></br>
+            </body>
+        </html>
+    </string>
+</resources>

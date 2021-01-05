@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.erwinpaisal.muslimapps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_logo_rect"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.DoaHarianFeature.ListDoaActivity"></activity>
+        <activity android:name=".activity.LicenseActivity" />
+        <activity android:name=".activity.JadwalKajianFeature.ApproveListKajianActivity" />
+        <activity
+            android:name=".activity.JadwalKajianFeature.FloatingSecretActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".activity.JadwalKajianFeature.FloatingHelpActivity"
+            android:theme="@style/Theme.Transparent" />
+        <activity android:name=".activity.JadwalKajianFeature.SubmitNewKajianActivity" />
+        <activity
+            android:name=".activity.JadwalKajianFeature.JadwalKajianDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.JadwalKajianFeature.JadwalKajianMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.CalendarActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".ui.jadwalsholat.JadwalSholat" />
+        <activity android:name=".ui.jadwalsholat.JadwalSholatActivity" />
+        <activity android:name=".activity.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.DzikirPagiDanPetangActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".activity.AlQuranFeature.AlQuranActivity" />
+        <activity android:name=".activity.AlQuranFeature.IsiDariSurahActivity" />
+        <activity
+            android:name=".activity.ArahKiblat"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

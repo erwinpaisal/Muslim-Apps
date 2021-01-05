@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    <android.support.design.widget.AppBarLayout-->
+    <!--        android:id="@+id/appbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:elevation="0dp"-->
+    <!--        app:elevation="0dp">-->
+
+    <!--        <android.support.v7.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="?attr/actionBarSize"-->
+    <!--            android:layout_gravity="center_horizontal"-->
+    <!--            android:background="@color/colorPrimary"-->
+    <!--            android:contentInsetStart="0dp"-->
+    <!--            android:contentInsetLeft="0dp"-->
+    <!--            android:contentInsetEnd="0dp"-->
+    <!--            android:contentInsetRight="0dp"-->
+    <!--            android:elevation="0dp"-->
+    <!--            app:contentInsetEnd="0dp"-->
+    <!--            app:contentInsetLeft="0dp"-->
+    <!--            app:contentInsetRight="0dp"-->
+    <!--            app:contentInsetStart="0dp">-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:text="Al Firqotun Najiyah"-->
+    <!--                android:textColor="@color/white"-->
+    <!--                android:textSize="18sp"-->
+    <!--                android:textStyle="bold" />-->
+    <!--        </android.support.v7.widget.Toolbar>-->
+    <!--    </android.support.design.widget.AppBarLayout>-->
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Al Firqotun Najiyah"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboregular"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/appbar"></FrameLayout>
+    <!--<include layout="@layout/content_main" />-->
+    <com.aurelhubert.ahbottomnavigation.AHBottomNavigation
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+</RelativeLayout>
